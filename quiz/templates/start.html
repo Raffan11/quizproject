@@ -2,27 +2,30 @@
 <!doctype html> 
 <html>
 	<body>
-		{% for quiz in quizzes %}
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GÖTEBORGSQUIZ</title>
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/josen1.css">
+		</head>
+		<br>
+	
+		<br>
+		<h1>♥ ♬ ♥ QUIZ ♥ ☀ ♥</h1>
+		<br>
+		<br>
+		<br>
+	{% for quiz in quizzes %}
 			<p><a href="{%url 'quiz_page' quiz.quiz_number %}">
 			{{ quiz.name }}
 			</a></p>
 		{% endfor %}
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>QUIZQUIZQUIZQUIZ</title>
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/static/josen1.css">
-		</head>
-		<h1>♥ ♥ ♥ QUIZ ♥ ♥ ♥</h1>
-		<p>ÄR DU EN EXPERT? </p><br>
-	<button type="button">GBG</button><br>
 	<br>
-	<button type="button">♪ ♫ ♩ ♬</button><br>
-	<br>
-	<button type="button"> ☀ ☁ ☂</button><br>
+
 <br>
 </html>
 

@@ -1,25 +1,25 @@
 <!doctype html>
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> RESULT </title>
+		<title> RESULTAT </title>
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="josen1.css">
+		<link rel="stylesheet" href="/static/josen1.css">
 	</head>
 	<body>
-		<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+		<h1>DITT RESULTAT: {{ correct }} AV {{ total }}</h1>
 		<br>
-		<h2>YOU GOT 2 RIGHT OUT OF 10... :(</h2>
-		<p>YOU NEED SOME PRACTICE. <br></p>		
-
+		<h2>BRA JOBBAT!</h2>	
+<img src="/static/giphy.gif">
 
 	<p><a href="{% url 'start_page' %}">
-    Till startsidan
+    TILLBAKS TILL STARTSIDAN
 	</a></p>	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
 	</body>
 	</html>
