@@ -3,7 +3,9 @@
 <html>
 	<body>
 		{% for quiz in quizzes %}
-			<p>{{ quiz.name }}</p>
+			<p><a href="{%url 'quiz_page' quiz.quiz_number %}">
+			{{ quiz.name }}
+			</a></p>
 		{% endfor %}
 
 	<head>
