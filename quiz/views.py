@@ -21,7 +21,6 @@ from django.shortcuts import redirect
 # ]
 
 
-
 def start(request):
 	context = {
 		"quizzes": Quiz.objects.all(),
