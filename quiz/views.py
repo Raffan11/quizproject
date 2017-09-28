@@ -1,27 +1,29 @@
+from quiz.models import Quiz
 from django.shortcuts import render
 
-quizzes = [
-	{
-		"quiz_number": 1,
-		"name": "GÖTEBORG",
-		"description": "Är du expert på GBG?"
-	},
-	{
-		"quiz_number": 2,
-		"name": "Största fotbollslagen",
-		"description": "Kan du dina lag?"
-	},
-	{
-		"quiz_number": 3,
-		"name": "Världens mest kända hackare",
-		"description": "Kan du din hackerhistoria?"
-	},
-]
-# Create your views here.
+# quizzes = [
+# 	{
+# 		"quiz_number": 1,
+# 		"name": "GÖTEBORG",
+# 		"description": "Är du expert på GBG?"
+# 	},
+# 	{
+# 		"quiz_number": 2,
+# 		"name": "Största fotbollslagen",
+# 		"description": "Kan du dina lag?"
+# 	},
+# 	{
+# 		"quiz_number": 3,
+# 		"name": "Världens mest kända hackare",
+# 		"description": "Kan du din hackerhistoria?"
+# 	},
+# ]
+
+
 
 def start(request):
 	context = {
-		"quizzes": quizzes,
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "start.html", context)
 
