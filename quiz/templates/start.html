@@ -7,28 +7,24 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>GÖTEBORGSQUIZ</title>
+		<title>QUIZ</title>
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/josen1.css">
 		</head>
 		<br>
+		<h5>♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+		<br>
+		VÄLKOMMEN TILL JOSENS QUIZ!</h5>
 	
 		<br>
-		<h1>♥ ♬ ♥ QUIZ ♥ ☀ ♥</h1>
-		<br>
-		<br>
-		<br>
 	{% for quiz in quizzes %}
-			<p><a href="{%url 'quiz_page' quiz.quiz_number %}">
-			{{ quiz.name }}
-			</a></p>
+			<a href="{%url 'quiz_page' quiz.quiz_number %}">
+			<h4>{{ quiz.name }}</h4>
+			</a>
 		{% endfor %}
 
 	<br>
-
-<br>
-</html>
-
+	<h6>♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</h6>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>

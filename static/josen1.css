@@ -1,46 +1,64 @@
 
 
 body {
-font-size: 10vw;
+font-size: 5vw;
 font-family: "Fjalla One";
-max-width: 600px;
 color: gold;
 text-align: center;
-background-image: url('/static/spårvagngbg.jpg');
+background: url('/static/spårvagngbg.jpg');
+background-color: rgb(78, 81, 89);
 background-size: 100%;
 background-repeat: no-repeat;
 text-align: center;
 }
 
-button { 
-  background-color: rgb(255, 255, 255);
-  font-color: gold;
-  border: 0;
-  position: center;
-  width: 280px;
-  height: 280px;
-  padding: 40px 63px;
-  font-size: 22px;
-  line-height: 5.32;
-  border-radius: 140px;
-
-}
 div {
 height: 200%;
 width: 200%;
 }
 h1 {
-	font-size: 25pt;
+	font-size: 5vw;
 	font-family: "Fjalla One";
 	text-align: center;
+	position: center;
 }
 h2 { 
-	font-size: 20pt;
+	font-size: 5vw;
 	text-align: center;
+	position: center;
 }
+h3 {
+	font-size: 5vw;
+	text-align: center;
+	position: center;
+}
+h4 {
+	font-size: 11vw;
+	
+	font-color: rgb(220, 149, 154);
+	text-align: center;
+	position: center;
+}
+h5 {
+	font-size: 7vw;
+	font-color: rgb(220, 149, 154);
+	text-align: center;
+	position: center;
+}
+h6 {
+	font-size: 8vw;
+	font-color: rgb(220, 149, 154);
+}
+
+@media only screen and (max-width: 376px) {
+    h6 {
+	position: absolute;
+	bottom: 2px;
+}}
+
 p { 
 	text-align: center;
-	font-size: 16pt;
+	font-size: 5vw;
 }
 a { color: gold;
 }
@@ -57,3 +75,98 @@ a { color: gold;
 .column3 {
 	background-color: rgb(255, 255, 255);
 }
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+
+button { 
+  background-color: rgb(255, 255, 255);
+  font-color: gold;
+  border: 0;
+  position: center;
+  width: 280px;
+  height: 280px;
+  padding: 40px 63px;
+  font-size: 40px;
+  line-height: 5.32;
+  border-radius: 140px;
+}
+
+button:focus {
+	outline: none !important;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:focus {
+outline: none !important;
+}
+.option-input:checked {
+  background: rgb(220, 149, 154);
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+

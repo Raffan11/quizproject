@@ -10,17 +10,19 @@
 		<link rel="stylesheet" href="/static/josen1.css">
 	</head>
 	<body>
-		<h1>{{ question_number }}. {{ question }}</h1>
-<br><p>		
+		<br>
+		<br>
+		<h1>{{ question_number }}. {{ question }}</h1><br><p>		
 <!-- <form method="get" action="{% url 'results_page' quiz_number %}"> -->
 	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
-		<input type="radio" name="answer" value="1"> {{ answer1 }}<br>
-		<input type="radio" name="answer" value="2"> {{ answer2 }}<br>
-		<input type="radio" name="answer" value="3"> {{ answer3 }}<br>
-
+		<label><input type="radio" class="option-input radio" name="answer" value="1" checked> {{ answer1 }}<br></label>
+		<label><input type="radio" class="option-input radio" name="answer" value="2"> {{ answer2 }}<br></label>
+		<label><input type="radio" class="option-input radio" name="answer" value="3"> {{ answer3 }}<br></label>
 		<br>
-    	<button type="submit">NÄSTA</button>
+		<br>
+		<br>
+    	<label><button type="submit">NÄSTA</button></label>
 	</form></p>
 
 
