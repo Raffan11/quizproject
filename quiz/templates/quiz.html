@@ -8,17 +8,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<br>
 		<br>
-		<title>GÖTEBORGSQUIZ</title>
+		<title>RAFF</title>
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/josen1.css">
 	</head>
 	<body>
 		<br>
-		<h1>{{ quiz.name }}</h1>
-		<p>{{ quiz.description }}</p>
+		<h3>{{ quiz.name }}</h3>
+		<h4>{{ quiz.description }}</h4>
 			<br>
 			<a href="{% url 'question_page' quiz_number 1 %}">
-    		<button type="submit">STARTA QUIZ</button>
+    		<button type="submit">STARTA</button>
 	</a>	
 
 

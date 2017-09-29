@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> RESULTAT </title>
+		<title>RAFF</title>
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/josen1.css">
 	</head>
@@ -13,22 +13,24 @@
 
 		{% if correct > 9 %}
 		<h1>{{ correct }} av {{ total }}</h1>
-		<h1>WOW! DU ÄR EN EXPERT!</h1>
+		<h1>WOW!! VI ÄR BEST FRIENDS FOR EVER.</h1>
 		{% elif correct < 3 %}
 		<h1>{{ correct }} av {{ total }}</h1>
-		<h2>DU ÄR INGEN EXPERT...</h2>
+		<h2>DET DÄR GICK INTE SÅ BRA..</h2>
 		{% else %}
 		<h1>{{ correct }} av {{ total }}</h1>
-		<h3>DU ÄR KLAR, OCH DU VAR GANSKA BRA!</h3>
+		<h3>KLAR! DU KÄNNER MIG GANSKA BRA.</h3>
 		{% endif %}
 		<br>
+		<br>
+		<br>
 
-
-		<img src="/static/giphy.gif">
-	<br>
-	<p><a href="{% url 'start_page' %}">
-    TILLBAKS TILL STARTSIDAN
-	</a></p>	
+			<img src="/static/giphy.gif">
+			<br>
+			<br>
+			<p><a href="{% url 'start_page' %}">
+    		TILLBAKS TILL STARTSIDAN
+			</a></p>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -7,24 +7,31 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>QUIZ</title>
+		<title>RAFF</title>
 		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/static/josen1.css">
 		</head>
 		<br>
-		<h5>♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
 		<br>
-		VÄLKOMMEN TILL JOSENS QUIZ!</h5>
+		<h1>♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ <br>
+		VÄLKOMMEN TILL MITT QUIZ!</h1>
 	
+		<br>
 		<br>
 	{% for quiz in quizzes %}
 			<a href="{%url 'quiz_page' quiz.quiz_number %}">
-			<h4>{{ quiz.name }}</h4>
+			<h2>{{ quiz.name }}</h2>
 			</a>
 		{% endfor %}
+		<br>
+		<br>
+
+		<video width="400" height="600" autoplay loop>
+  <source src="/static/36E09CE3-9DA1-4F8D-B570-BBBEBEDD2AA7 kopia.MP4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 	<br>
-	<h6>♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</h6>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
