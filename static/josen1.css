@@ -3,6 +3,7 @@
 body {
 font-size: 18pt;
 font-family: "Fjalla One";
+font-weight: bold;
 color: gold;
 text-align: center;
 background: url('/static/spårvagngbg.jpg');
@@ -19,12 +20,13 @@ width: 200%;
 h1 {
 	font-size: 34pt;
 	font-family: "Fjalla One";
+  font-weight: bold;
   color: rgb(220, 149, 154);
 	text-align: center;
 	position: center;
 }
 h2 { 
-	font-size: 28pt;
+	font-size: 32pt;
 	text-align: center;
 	position: center;
 }
@@ -35,13 +37,11 @@ h3 {
 }
 h4 {
 	font-size: 24pt;
-	
-	color: rgb(220, 149, 154);
 	text-align: center;
 	position: center;
 }
 h5 {
-	font-size: 34pt;
+	font-size: 36pt;
   font-family: "Fjalla One";
   font-color: rgb(220, 149, 154);
   text-align: center;
