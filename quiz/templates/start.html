@@ -16,6 +16,7 @@
 		<br>
 	{% for quiz in quizzes %}
 			<a href="{%url 'quiz_page' quiz.quiz_number %}">
+				<br>
 			<h2>{{ quiz.name }}</h2>
 			</a>
 		{% endfor %}
