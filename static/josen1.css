@@ -19,12 +19,12 @@ width: 200%;
 h1 {
 	font-size: 34pt;
 	font-family: "Fjalla One";
-  font-color: rgb(220, 149, 154);
+  color: rgb(220, 149, 154);
 	text-align: center;
 	position: center;
 }
 h2 { 
-	font-size: 24pt;
+	font-size: 28pt;
 	text-align: center;
 	position: center;
 }
@@ -36,14 +36,16 @@ h3 {
 h4 {
 	font-size: 24pt;
 	
-	font-color: rgb(220, 149, 154);
+	color: rgb(220, 149, 154);
 	text-align: center;
 	position: center;
 }
 h5 {
-	font-size: 12pt;
-	text-align: center;
-	position: center;
+	font-size: 34pt;
+  font-family: "Fjalla One";
+  font-color: rgb(220, 149, 154);
+  text-align: center;
+  position: center;
 }
 h6 {
 	font-size: 12pt;
@@ -98,7 +100,7 @@ a {
 
 button { 
   background-color: rgb(255, 255, 255);
-  font-color: gold;
+  color: gold;
   border: 0;
   position: center;
   width: 280px;

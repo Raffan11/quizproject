@@ -12,7 +12,8 @@
 	<body>
 		<br>
 		<br>
-		<h1>{{ question_number }}. {{ question }}</h1><br><p>		
+		<h5>{{ question_number }}. {{ question }}</h5><br>
+		<p>		
 <!-- <form method="get" action="{% url 'results_page' quiz_number %}"> -->
 	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
